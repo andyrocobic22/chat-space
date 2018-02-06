@@ -1,0 +1,25 @@
+.sidebar
+  .user-content.cf
+    .name-bar
+      %h2
+        = current_user.name
+      .user_chat
+        %i.fa.fa-pencil-square-o{"aria-hidden" => "true"}
+      .user_edit 
+        =link_to edit_user_path(current_user) do
+          %i.fa.fa-cog{"aria-hidden" => "true"}
+  .group-content
+    %a.group{:href => "#"}
+      %p.group-name GROUP1
+      %p.group-new_comment おはようございます。
+    %a.group{:href => "#"}
+      %p.group-name GROUP1
+      %p.group-new_comment おはようございます。
+    %a.group{:href => "#"}
+      %p.group-name GROUP1
+      %p.group-new_comment おはようございます。
+    %a.group{:href => "#"}
+      %p.group-name GROUP1
+      %p.group-new_comment おはようございます。
+
+
