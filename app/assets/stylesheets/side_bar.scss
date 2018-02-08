@@ -44,17 +44,17 @@
 	.group{
 		padding-left:20px;
 		padding-right: 20px;
-		height: 85%;
 		.group-content{
 			display: block;
 			padding-top: 20px;
 			padding-bottom: 20px;
-			text-decoration: none;
+			.group_underline{
+				text-decoration: none;
+			}
 			.group-name{
 				color: #ffffff;
 				font-size:15px;
 				margin-bottom: 5px;
-				
 			}
 			.group-new_comment{
 				color: #ffffff;

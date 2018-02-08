@@ -12,8 +12,8 @@
   .group
     .group-content
       - current_user.groups.each do |group|
-        = link_to group_messages_path(group) do
-          .group-name
+        = link_to group_messages_path(group), class: "group_underline" do
+          .group-name 
             = group.name
           .group-new_comment
             メッセージはまだあリマセン。
