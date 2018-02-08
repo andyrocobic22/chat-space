@@ -1,0 +1,66 @@
+.sidebar{
+	float: left;
+	height: 100%;
+	width: 300px;
+	background-color: #253141;
+	.user-content{
+		height: 15%;
+		display: inline-block;
+		background-color: black;
+		box-sizing:border-box;
+		width: 300px;
+		position: relative;
+		.name-bar{
+			position: absolute;
+			top: 40%;
+			width: 100%;
+			h2{	
+				color: #ffffff;
+				float: left;
+				font-size: 20px;
+				font-weight: bold;
+				margin-right: 160px;
+				margin-left: 20px;
+			}
+			.user_chat{
+				float: left;
+				display: block;
+				margin-top: 4px;
+				.fa-pencil-square-o{
+					color: #ffffff;
+				}
+			}
+			.user_edit{
+				float: left;
+				display: block;
+				margin-top: 4px;
+				.fa-cog{
+					color: #ffffff;
+				}
+
+			}
+		}	
+	}
+	.group{
+		padding-left:20px;
+		padding-right: 20px;
+		.group-content{
+			display: block;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			.group_underline{
+				text-decoration: none;
+			}
+			.group-name{
+				color: #ffffff;
+				font-size:15px;
+				margin-bottom: 5px;
+			}
+			.group-new_comment{
+				color: #ffffff;
+				font-size: 11px;
+			}	
+		}
+
+	}
+}

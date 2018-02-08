@@ -1,0 +1,19 @@
+.sidebar
+  .user-content
+    .name-bar
+      %h2
+        = current_user.name
+      .user_chat
+        =link_to new_group_path do
+          %i.fa.fa-pencil-square-o{"aria-hidden" => "true"}
+      .user_edit 
+        =link_to edit_user_path(current_user) do
+          %i.fa.fa-cog{"aria-hidden" => "true"}
+  .group
+    .group-content
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group), class: "group_underline" do
+          .group-name 
+            = group.name
+          .group-new_comment
+            メッセージはまだあリマセン。
