@@ -25,7 +25,7 @@
     .user_form.cf
       = form_for [@group, @message] do |f|
         .type-area
-          = f.textarea :text, placeholder: "type a message"
+          = f.text_area :text, placeholder: "type a message"
           .picture_button
           = f.label :image do
             %i.fa.fa-picture-o{"aria-hidden" => "true"}
