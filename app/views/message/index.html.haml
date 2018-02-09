@@ -2,4 +2,33 @@
   %header
     %p チャットグループが作成されました。
   = render 'shared/side_bar'
-  = render 'shared/main_content'
+  .main-content
+  .group-name-bar
+    .name-plate.cf
+      .name-bar
+        %h2 GROUP1
+        %p MEMBER: Taro Yamada
+      %a.edit-button{:href => "#"} edit
+  .group-main-content.cf
+    .user_name USER_NAME
+    .date 2000/01/01/00:00:00
+  .comment 今日もおつかれさま！！
+  .group-main-content.cf
+    .user_name USER_NAME
+    .date 2000/01/01/00:00:00
+  .comment 今日もおつかれさま！！
+  .group-main-content.cf
+    .user_name USER_NAME
+    .date 2000/01/01/00:00:00
+  .comment 今日もおつかれさま！！
+  .group-comment-area
+    .user_form.cf
+      = form_for [@group, @message] do |f|
+        .type-area
+          = f.textarea :text, placeholder: "type a message"
+          .picture_button
+          = f.label :image do
+            %i.fa.fa-picture-o{"aria-hidden" => "true"}
+        .send_button
+          = f.submit "send"
+
