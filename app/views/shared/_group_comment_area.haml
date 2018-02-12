@@ -1,0 +1,12 @@
+.group-comment-area 
+  .user_form.cf
+    = form_for [@group, @message] do |f|
+      .type-area
+        =f.text_area :text, placeholder: "type a message"
+        .picture_button
+          = f.label :image do
+            = fa_icon 'picture-o' 
+        .picture_file_field    
+          = f.file_field :image 
+      .send_button
+        =f.submit "Send"
