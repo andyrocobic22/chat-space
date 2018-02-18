@@ -1,0 +1,13 @@
+= render 'shared/side_bar'
+.main-content
+  = render 'shared/group_name_bar'
+  = render @messages
+  = render 'shared/group_comment_area'
+/ 1:messagesのフォルダをさがしに行く。
+/ 2:単数形の部分テンプレートを探す（ここで言う_message）
+/ 3:配列を渡すとその要素分部分テンプレート繰り返す。
+/ 4:部分テンプレート内で使われている単数形の変数に配列の要素（messagesの要素/messagesクラスのインスタンス/messagesのレコード）を代入。
+
+/ partial/colleciton/
+/  localは部分テンプレート内で渡したい変数の値を決める。(asも一緒)
+
