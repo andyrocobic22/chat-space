@@ -49,25 +49,29 @@ header {
 		}
 	}
 		
-
-	.group-main-content{
-		margin-top: 46px;
-		margin-bottom: 10px;
-		.user_name{
-			float: left;
-			font-weight: bold;
+	.main-chat-content{
+		overflow-y: scroll;
+		height: calc( 100vh - 15% - 90px );
+		.group-main-content{
+			margin-top: 46px;
+			margin-bottom: 10px;
+			.user_name{
+				float: left;
+				font-weight: bold;
+				font-size: 15px;
+				margin-right: 10px;
+			}
+			.date{
+				font-size: 11px;
+				float: left;
+				color: gray;
+			}
+			.comment{
 			font-size: 15px;
-			margin-right: 10px;
+			}
 		}
-		.date{
-			font-size: 11px;
-			float: left;
-			color: gray;
-		}
-	}
-	.comment{
-		font-size: 15px;
-	}
+	}	
+	
 	.group-comment-area{
 		background-color: #B8C3C7;
 		position: absolute;
