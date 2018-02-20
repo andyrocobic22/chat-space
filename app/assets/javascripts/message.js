@@ -1,15 +1,17 @@
 $(function(){
   function buildHTML(message){
-    var html = `<div class ="group-content cf">
-                  <div class ="user_name">
-                    ${ message.name }
+    var html = `<div class = "group-main-content">  
+                  <div class ="group-content cf">
+                    <div class ="user_name">
+                      ${ message.name }
+                    </div>
+                    <div class ="date">
+                      ${ message.date }
+                    </div>
                   </div>
-                  <div class ="date">
-                    ${ message.date }
+                  <div class ="comment">  
+                    ${ message.text }
                   </div>
-                </div>
-                <div class ="comment">  
-                  ${ message.text }
                 </div>`
     return html;
   }
@@ -27,14 +29,20 @@ $(function(){
     })
     .done(function(data){
         var html = buildHTML(data);
-        $('.group-main-content').append(html)
+        $('.main-chat-content').append(html)
         $('#message_text').val('')
+        $(function() {
+          var target = $('.main-chat-content').height;
+          $('.main-chat-content').scrollTop(target);
+        });
     })
     .fail(function(){
         alert('error');
     })
+    return false;
+
   })
-  
+
 })
 
 
