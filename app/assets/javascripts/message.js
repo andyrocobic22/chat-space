@@ -31,10 +31,12 @@ $(function(){
         var html = buildHTML(data);
         $('.main-chat-content').append(html)
         $('#message_text').val('')
-        $(function() {
-          var target = $('.main-chat-content').height;
-          $('.main-chat-content').scrollTop(target);
-        });
+        $ (function(){
+          var number = $(".main-chat-content").get(0).scrollHeight;
+          $('.main-chat-content').animate({
+            scrollTop: number
+          });
+        })
     })
     .fail(function(){
         alert('error');
