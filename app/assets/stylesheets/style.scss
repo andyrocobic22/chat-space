@@ -42,9 +42,11 @@ header {
 				border: solid 1px #38AEF0;
 				padding: 12.5px 20px;
 				text-decoration: none;
-				color: #38AEF0;
 				box-sizing:border-box;
 				font-size: 15px;
+				a{
+					color: #38AEF0;
+				}
 			}
 		}
 	}
@@ -70,6 +72,7 @@ header {
 			}
 		}
 	}	
+	}
 	.group-comment-area{
 		background-color: #B8C3C7;
 		position: absolute;
