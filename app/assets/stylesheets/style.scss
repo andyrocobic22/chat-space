@@ -25,7 +25,7 @@ header {
 				padding-top: 35px;
 				padding-bottom: 15px;
 				margin: auto;
-				h2{	
+				h2{
 					color: #3333333;
 					font-size: 20px;
 					margin-bottom: 15px;
@@ -34,8 +34,8 @@ header {
 					font-size: 12px;
 					color:#9999999;
 				}
-			}	
-			.edit-button{
+			}
+			a{
 				right: 40px;
 				top: 35%;
 				position: absolute;
@@ -44,8 +44,10 @@ header {
 				text-decoration: none;
 				box-sizing:border-box;
 				font-size: 15px;
-				a{
-					color: #38AEF0;
+				color: #38AEF0;
+				&:hover{
+					background-color: #38AEF0;
+					color: #ffffff;
 				}
 			}
 		}
@@ -71,7 +73,6 @@ header {
 				font-size: 15px;
 			}
 		}
-	}	
 	}
 	.group-comment-area{
 		background-color: #B8C3C7;
@@ -104,12 +105,12 @@ header {
 					}
 					.picture_file_field{
 						display: none;
-					}	
+					}
 			}
 			.send_button{
 				float: left;
 				margin-left: 15px;
-				
+
 				input{
 					background-color: #38AEF0;
 					color:#ffffff;
@@ -117,7 +118,7 @@ header {
 					width: 100px;
 				}
 			}
-		}	
+		}
 	}
 }
 .cf:after{
