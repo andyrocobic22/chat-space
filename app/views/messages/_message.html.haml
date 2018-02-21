@@ -1,9 +1,10 @@
-.group-main-content.cf
-  .user_name  
-  = message.user.name
-  .date 
-  = message.created_at.strftime('%Y年%m月%d日 %H:%M:%S')
-.comment 
-  - if message.text.present?
-    = message.text
-  = image_tag message.image.url  if message.image.present?
+.group-main-content
+  .group-content.cf
+    .user_name  
+      = message.user.name
+    .date 
+      = message.created_at.strftime('%Y年%m月%d日 %H:%M:%S')
+  .comment 
+    - if message.text.present?
+      = message.text
+    = image_tag message.image.url if message.image.present?
