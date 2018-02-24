@@ -15,11 +15,11 @@ class GroupsController < ApplicationController
 		redirect_to root_path notice: 'グループを作成しました。'
 	  else
 		render :new
-	  end	
+	  end
 	end
 
 	def edit
-		
+
 	end
 
 	def update
@@ -27,17 +27,17 @@ class GroupsController < ApplicationController
 		redirect_to :root,notice: 'グループを編集しました。'
 		else
 			render :edit
-		end	
+		end
 	end
 
-	private 
+	private
 
 	def group_params
 		params.require(:group).permit(:name, {user_ids: [] })
-	end	
+	end
 		# 選択されたuer_idを配列に保存する。user_idで紐づけて、名前を出している。
 	def set_group
 		@group = Group.find(params[:id])
 	end
-	
+
 end
