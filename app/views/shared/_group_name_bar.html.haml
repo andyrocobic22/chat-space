@@ -1,7 +1,8 @@
 .group-name-bar
   .name-plate.cf
     .name-bar
-      %h2 
+      %h2
       = @group.name
       %p MEMBER: Taro Yamada
-    .edit-button edit
+    .edit-button
+    =link_to "Edit", edit_group_path(@group)
