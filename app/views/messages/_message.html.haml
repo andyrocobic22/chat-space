@@ -1,10 +1,10 @@
-.group-main-content
+.group-main-content{"data-message-id": "#{message.id}" }
   .group-content.cf
-    .user_name  
+    .user_name
       = message.user.name
-    .date 
+    .date
       = message.created_at.strftime('%Y年%m月%d日 %H:%M:%S')
-  .comment 
+  .comment
     - if message.text.present?
       = message.text
     = image_tag message.image.url if message.image.present?
