@@ -49,8 +49,11 @@ $(function(){
 
   $(function(){
     $(function(){
-      // 5秒ごとに、update関数を動かす。
-      setInterval(update, 5000);
+      // ”groups/数字/messages”のURLと現在のURLが一致すれば
+      if(window.location.href.match(/\/groups\/\d+\/messages/)){
+        // 5秒ごとに、update関数を動かす。
+        setInterval(update, 1000);
+      }
     });
       // ここからupdate関数の詳細
     function update(){
